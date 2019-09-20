@@ -1,0 +1,15 @@
+title: Link
+type: object
+properties:
+  rel:
+    type: string
+  href:
+    type: string
+required:
+- rel
+- href
+x-examples:
+  Self link:
+    value:
+      rel: self
+      href: https://burgerprofiel.vlaanderen.be/v1/certificates?page=0&limit=10

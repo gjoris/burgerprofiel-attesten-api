@@ -1,0 +1,59 @@
+title: Certificate
+type: object
+x-examples:
+  only-required:
+    value:
+      id: 85144567-7043-4469-9e79-279f4eb31e27
+      name: certificate-1234
+      links:
+        - rel: self
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27'
+        - rel: download
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27/download'
+  only-year:
+    value:
+      id: 85144567-7043-4469-9e79-279f4eb31e27
+      name: certificate-1234
+      year: 2019
+      links:
+        - rel: self
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27'
+        - rel: download
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27/download'
+  only-community:
+    value:
+      id: 85144567-7043-4469-9e79-279f4eb31e27
+      name: certificate-1234
+      community: Brussel
+      links:
+        - rel: self
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27'
+        - rel: download
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27/download'
+  full-certificate:
+    value:
+      id: 85144567-7043-4469-9e79-279f4eb31e27
+      name: certificate-1234
+      community: Brussel
+      year: 2019
+      links:
+        - rel: self
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27'
+        - rel: download
+          href: 'https://burgerprofiel.vlaanderen.be/certificates/85144567-7043-4469-9e79-279f4eb31e27/download'
+description: Certificate representation
+properties:
+  id:
+    type: string
+  year:
+    type: integer
+  community:
+    type: string
+  name:
+    type: string
+  links:
+    $ref: ../../common/models/Item/item-linksforitem.v1.yaml
+required:
+  - id
+  - links
+  - name

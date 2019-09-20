@@ -1,0 +1,16 @@
+title: PageMetadata
+type: object
+properties:
+  size:
+    type: integer
+  totalElements:
+    type: integer
+  totalPages:
+    type: number
+  number:
+    type: number
+required:
+- size
+- totalElements
+- totalPages
+- number

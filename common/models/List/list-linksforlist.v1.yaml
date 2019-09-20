@@ -1,0 +1,31 @@
+title: Links For List
+type: array
+x-examples:
+  'List links - first in list, multiple pages':
+    value:
+      - rel: self
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+      - rel: next
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=1&limit=10'
+      - rel: start
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+      - rel: last
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=4&limit=10'
+  'List links - last page, no next':
+    value:
+      - rel: self
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=4&limit=10'
+      - rel: start
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+      - rel: last
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=4&limit=10'
+  List links - first is also last:
+    value:
+      - rel: self
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+      - rel: start
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+      - rel: last
+        href: 'https://burgerprofiel.vlaanderen.be/certificates?page=0&limit=10'
+items:
+  $ref: ../Common/common-link.v1.yaml
